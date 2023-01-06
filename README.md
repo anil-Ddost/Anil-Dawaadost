@@ -32,6 +32,21 @@ def DeleteVm():
     metadata_server = "http://metadata/computeMetadata/v1/instance/"
     metadata_flavor = {'Metadata-Flavor' : 'Google'}
     res =(requests.get(metadata_server + 'hostname', headers = metadata_flavor).text).split('.')
+    
+    -----------------------------------------------------------------------------------------------------
+    Connect postgres by using Jupyter
+    import pandas as pd
+    import sqlite3
+    pip install ipython-sql
+    import pandas.io.sql as sqlio
+    import psycopg2 as ps
+    conn2 = ps.connect (dbname="postgres",
+                    user ="postgres",
+                    password ="Daw@@d0$t",
+                    host="34.93.78.248",
+                    port ="5432" )
+    
+    
     # Project ID for this request.
     
     __________________________________________________________________________________________________________
